@@ -20,6 +20,15 @@ public class Event implements Serializable {
     private String name;
     private String img;
     private String url;
+    private String sobre;
+
+    public Event(int id, String name, String img, String url, String sobre) {
+        this.id = id;
+        this.name = name;
+        this.img = img;
+        this.url = url;
+        this.sobre = sobre;
+    }
     
 
     public Event(String name, String img, String url) {
@@ -38,6 +47,13 @@ public class Event implements Serializable {
     public Event() {
     }
 
+    public String getSobre() {
+        return sobre;
+    }
+
+    public void setSobre(String sobre) {
+        this.sobre = sobre;
+    }
     @Override
     public String toString() {
         return "Event{" + "id=" + id + ", name=" + name + ", img=" + img + ", url=" + url + '}';

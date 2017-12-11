@@ -9,7 +9,6 @@ import com.google.gson.Gson;
 import ifrs.pw2.domain.Event;
 import ifrs.pw2.domain.EventService;
 import java.util.List;
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
